@@ -1,0 +1,22 @@
+// Crio um mixin com o '@' e dou um nome para ele :
+@mixin desfoque {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+ 
+// Agora para incluir :
+.painel img {
+  @include desfoque;
+  max-width: 100%;
+}
+
+@mixin cor_fundo{
+     background-color:#f9f9f9;
+     color:#999;
+}
+
+body
+{
+  @include cor_fundo;
+  max-width: 100%;
+}
