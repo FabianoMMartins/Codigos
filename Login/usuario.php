@@ -17,7 +17,7 @@
    //Aqui estara o metodo de acesso ao banco.
    $nome  = $this->nome;
    $senha = $this->senha;
-   $query = "SELECT nome, senha FROM usuarios WHERE nome=$nome AND senha=$senha";
+   $query = $query = "SELECT nome, senha FROM usuarios WHERE nome='".$nome."' AND senha='".$senha."'";
    $resultados = mysql_query($query) or die(mysql_error();
    if (mysql_num_rows($resultados)>0) {
     $this->geraSessao($this);
