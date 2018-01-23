@@ -2,8 +2,8 @@
       
  include("usuario.php");
       
- $nome = $_POST["nome"];
- $senha = $_POST["senha"];
+ $nome  = addslashes($_POST["nome"]);
+ $senha = addslashes($_POST["senha"]);
       
  var usuario = new Usuario($nome,$senha);
       
