@@ -6,7 +6,7 @@
      echo $_COOKIE['FORD_TAURUS']; //Resultado: Criando e acessando Cookies
 
 
-    if(isset $_COOKIE['FORD_TAURUS'])
+    if(isset ($_COOKIE['FORD_TAURUS']))
     {
         header("Location:taurus97.php");
     }
