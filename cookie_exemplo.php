@@ -11,3 +11,20 @@
         header("Location:taurus97.php");
     }
 ?>
+
+
+<?php
+
+     // CRIANDO COOKIE
+    $carro = "Volks";
+    $marca = "Fusca";
+    $tempo = time() + 3600;
+
+    setcookie($carro,$marca,$tempo);
+
+    // LER COOKIE
+    $ler = $_COOKIE['Volks'];
+
+    echo $ler;
+
+?>
