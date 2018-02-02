@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="estilos.css" media="screen">
+<link rel="stylesheet" href="impressao.css" media="print">
+
+
+CSS aplicado em tamanhos de tela de, no máximo 320px. (IPHONE)
+<link rel="stylesheet" href="iphone.css" media="screen and (max-width: 320px)">
+
+
+<link rel="stylesheet" href="phones.css" media="screen and (min-width: 320px) and (orientation: portrait)">
+
+
+
+/* regra aplicada em todo lugar */
+body { background: blue; }
+ 
+/* aplica somente a partir de 320px */
+@media screen and (min-width: 320px) {
+   body { font-size: 80%; }
+}
+ 
+/* aplica somente a partir de 480px em landscape */
+@media screen and (min-width: 480px) and (orientation: landscape) {
+   nav { float: left; }
+}
+
+
+sugere que você faça um layout base pensando em 320px e depois adapte para outros tamanhos com:
+
+@media print { }
+ 
+@media only screen and (min-width: 480px) { }
+@media only screen and (min-width: 600px) { }
+@media only screen and (min-width: 992px) { }
+@media only screen and (min-width: 1382px) { }
+ 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) { }
+
+
+
+layout base pensando em 240px e os seguintes media queries:
+
+@media screen and (min-width:320px) { Apartir de 320 faca isso}
+@media screen and (min-width:480px) { Apartir de 480 faca isso }
+@media screen and (min-width:600px) { Apartir de 600 faca isso}
+@media screen and (min-width:768px) { Apartir de 768 faca isso}
+@media screen and (min-width:992px) { Apartir de 992 faca isso}
